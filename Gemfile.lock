@@ -217,6 +217,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   coderay
   database_cleaner
   devise (~> 4.7)
