@@ -14,8 +14,8 @@ gem "jquery-rails"
 gem "coderay"
 gem "redcarpet"
 
-gem 'doorkeeper-openid_connect'
-gem 'bundler'
+gem "doorkeeper-openid_connect"
+gem "bundler"
 gem "uglifier"
 gem "pg", "~> 1.1", group: :production
 gem "rollbar"

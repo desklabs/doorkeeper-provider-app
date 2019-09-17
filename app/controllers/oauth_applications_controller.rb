@@ -46,7 +46,6 @@ class OauthApplicationsController < ApplicationController
   end
 
   private
-
     def set_application
       @application = current_user.oauth_applications.find(params[:id])
     end
