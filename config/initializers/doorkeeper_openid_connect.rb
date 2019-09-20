@@ -70,7 +70,7 @@ EOL
 
   # Example claims:
   claims do
-    claim :email do |resource_owner|
+    claim :email, scope: :openid do |resource_owner, scopes, access_token|
       resource_owner.email
     end
 
