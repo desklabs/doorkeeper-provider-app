@@ -74,6 +74,10 @@ EOL
       resource_owner.email
     end
 
+    claim :name, scope: :openid do |resource_owner, scopes, access_token|
+      resource_owner.name
+    end
+
     # normal_claim :_bar_ do |resource_owner|
     #   resource_owner.bar
     # end
