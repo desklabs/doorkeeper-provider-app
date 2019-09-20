@@ -36,24 +36,24 @@ EOL
 
   resource_owner_from_access_token do |access_token|
     # Example implementation:
-    # User.find_by(id: access_token.resource_owner_id)
+    User.find_by(id: access_token.resource_owner_id)
   end
 
   auth_time_from_resource_owner do |resource_owner|
     # Example implementation:
-    # resource_owner.current_sign_in_at
+    resource_owner.current_sign_in_at
   end
 
   reauthenticate_resource_owner do |resource_owner, return_to|
     # Example implementation:
-    # store_location_for resource_owner, return_to
-    # sign_out resource_owner
-    # redirect_to new_user_session_url
+    store_location_for resource_owner, return_to
+    sign_out resource_owner
+    redirect_to new_user_session_url
   end
 
   subject do |resource_owner, application|
     # Example implementation:
-    # resource_owner.id
+    resource_owner.id
 
     # or if you need pairwise subject identifier, implement like below:
     # Digest::SHA256.hexdigest("#{resource_owner.id}#{URI.parse(application.redirect_uri).host}#{'your_secret_salt'}")
