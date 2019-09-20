@@ -56,7 +56,7 @@ EOL
     resource_owner.id
 
     # or if you need pairwise subject identifier, implement like below:
-    # Digest::SHA256.hexdigest("#{resource_owner.id}#{URI.parse(application.redirect_uri).host}#{'your_secret_salt'}")
+    #Digest::SHA256.hexdigest("#{resource_owner.id}#{URI.parse(application.redirect_uri).host}#{'your_secret_salt'}")
   end
 
   # Protocol to use when generating URIs for the discovery endpoint,
@@ -69,13 +69,13 @@ EOL
   # expiration 600
 
   # Example claims:
-  # claims do
-  #   normal_claim :_foo_ do |resource_owner|
-  #     resource_owner.foo
-  #   end
+  claims do
+    normal_claim :_foo_ do |resource_owner|
+      resource_owner.foo
+    end
 
-  #   normal_claim :_bar_ do |resource_owner|
-  #     resource_owner.bar
-  #   end
-  # end
+    # normal_claim :_bar_ do |resource_owner|
+    #   resource_owner.bar
+    # end
+  end
 end
