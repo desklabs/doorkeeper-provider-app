@@ -70,8 +70,8 @@ EOL
 
   # Example claims:
   claims do
-    normal_claim :_foo_ do |resource_owner|
-      resource_owner.foo
+    claim :email do |resource_owner|
+      resource_owner.email
     end
 
     # normal_claim :_bar_ do |resource_owner|
