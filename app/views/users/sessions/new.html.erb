@@ -5,7 +5,7 @@
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="form-group">
         <%= f.label :email %>
-        <%= f.email_field :email, class: 'form-control', autofocus: true, autocomplete: "email", placeholder: 'user@example.com' %>
+        <%= f.email_field :email, class: 'form-control', autofocus: true, autocomplete: "email", placeholder: 'svc-sso-demo-user@example.com' %>
       </div>
 
       <div class="form-group">
@@ -31,7 +31,7 @@
   <div class="col">
     <h4>Sign in as test user</h4>
     <p>
-      A default user is already created for this example application. Use <code>user@example.com</code> and <code>doorkeeper</code> as login and password.
+      A default user is already created for this example application. Use <code>svc-sso-demo-user@example.com</code> and <code>doorkeeper</code> as login and password.
     </p>
   </div>
 </div>
