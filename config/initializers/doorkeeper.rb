@@ -7,6 +7,7 @@ Doorkeeper.configure do
     if current_user
       current_user || warden.authenticate!(scope: :user)
     else
+      session[:user_return_to] = request.fullpath
       redirect_to(new_user_session_url)
       nil
     end
