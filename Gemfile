@@ -4,7 +4,7 @@ source "http://rubygems.org"
 
 ruby "2.6.2"
 
-gem "rails", "~> 6.0"
+gem "rails", "~> 5.2"
 gem "doorkeeper", "~> 5.1.0"
 gem "devise", "~> 4.7"
 
@@ -14,6 +14,8 @@ gem "jquery-rails"
 gem "coderay"
 gem "redcarpet"
 
+gem "doorkeeper-openid_connect"
+gem "bundler"
 gem "uglifier"
 gem "pg", "~> 1.1", group: :production
 gem "rollbar"
